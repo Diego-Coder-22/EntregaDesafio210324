@@ -20,8 +20,6 @@ app.use(express.json());
 //app.use("/api/carts", cartRouter);
 
 mongoose.connect(`mongodb+srv://diegocodeidea:uu5qyW7bS4FGpx1I@cluster0.70gqwqq.mongodb.net/`,{
-    useNewUrlParser: true,
-    useUnifiedTopology: true
 });
 
 const db = mongoose.connection;

@@ -15,7 +15,6 @@ async function renderProducts(products) {
                 style="max-height: 400px; aspect-ratio: 3/2; object-fit: contain;">
             <div class="card-body">
                 <h5 class="card-title">${products.title}</h5>
-                <p class="card-text">${products.brand}</p>
                 <p class="card-text">${products.description}</p>
                 <p class="card-text">Precio: $${products.price}</p>
                 <p class="card-text">Stock: ${products.stock}</p>
