@@ -17,7 +17,7 @@ const productController = {
     },
 
     addProduct: async (req, res) => {
-        const { title, brand, description, price, stock, category } = req.body;
+        const { title, description, price, stock, category } = req.body;
 
         try {
             const imageName = req.file ? req.file.filename : null;
@@ -28,8 +28,7 @@ const productController = {
 
             const newProduct = new Product({
                 title,
-                brand,
-                description,
+                 description,
                 price,
                 stock,
                 category,
